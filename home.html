@@ -1,0 +1,120 @@
+<html> 
+  <head>
+    <title>Tugas Membuat Hosting Web</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
+
+  <body>
+    
+    <div class="background-header">
+      <a href="https://www.unikom.ac.id/" class="logo">
+    <span class="logo-lg">
+      <img src="foto/logo.png" width="100px" height="100px"></span></a>
+          <h1>Tugas Membuat Hosting Web</h1>
+
+    <div class="w3-bar color-gradient">
+      <button class="w3-bar-item w3-button" onclick="openKlub('Foto')">Foto </button> 
+      <button class="w3-bar-item w3-button" onclick="openKlub('Foto2')">Foto 2</button> 
+      <button class="w3-bar-item w3-button" onclick="openKlub('Foto3')">Foto 3</button>
+      <button class="w3-bar-item w3-button" onclick="openKlub('Foto4')">Foto 4</button>
+      <button class="w3-bar-item w3-button" onclick="home('Home')">About Me</button> 
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">All</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <button class="w3-bar-item w3-button" onclick="openKlub('Foto2')">Foto 2</button>
+      <button class="w3-bar-item w3-button" onclick="openKlub('Foto3')">Foto 3</button>
+      <button class="w3-bar-item w3-button" onclick="openKlub('Foto4')">Foto 4</button>
+      <button class="w3-bar-item w3-button" onclick="openKlub('Web')">Web</button>  
+    </div>
+  </div>
+</div>
+</div>
+    <div id="Foto" class="w3-container klub w3-animate-fading"  style="display:none"> 
+      <h2>Foto </h2> 
+      <img src="foto/foto.jpg" alt="Foto" height="600" width="500">
+    </div> 
+    <div id="Foto2" class="w3-container klub w3-animate-bottom" style="display:none"> 
+      <h2>Foto 2</h2> 
+      <img src="foto/foto2.jpg" alt="Foto2"height="600" width="500">
+    </div> 
+    <div id="Foto3" class="w3-container klub w3-animate-top" style="display:none"> 
+      <h2>Foto 3</h2> 
+      <img src="foto/foto3.jpg" alt="Foto3" height="600" width="500 ">
+    </div> 
+    <div id="Foto4" class="w3-container klub w3-animate-zoom" style="display:none"> 
+      <h2>Foto 3</h2> 
+      <img src="foto/foto4.jpg" alt="Foto4"height="400" width="600">
+    </div> 
+    <div id="Web" class="w3-container klub w3-animate-left"  style="display:none"> 
+      <br>
+      <!DOCTYPE html>
+<html>
+<head>
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+      <center>
+        <div class="backw3-panel w3-animate-opacity color-gradient w3-round-xxlarge">
+            <h2>Animasi Gambar dengan Style W3-animate-bottom dan W3 animate-top</h2>
+        </div>
+        <div class="w3-panel w3-animate-bottom color-gradient w3-round-xxlarge">
+        <h2>Gambar Animasi Satu</h2>
+      </div>
+        <button class="w3-button w3-animate-top w3-circle color-gradient" onclick="refresh()">
+          <img src="Tugas Web 11\foto\foto.jpg" alt="isigambar" style="width:500px;height:600px; border-radius: 50%;">
+        </button>
+        <br>
+        <div class="w3-panel w3-animate-bottom color-gradient w3-round-xxlarge">
+        <h2>Gambar Animasi Dua</h2>
+      </div>
+        <button class="w3-button w3-animate-top color-gradient" onclick="refresh()">
+          <img src="Tugas Web 11\foto\foto2.jpg" alt="isigambar" style="width:500px;height:600px">
+        </button>
+      </div>
+    </center>
+  </div>
+</body>
+</html>
+    </div> 
+    <script> 
+    function refresh() {
+      window.location.href = "home.html"; 
+    }
+
+    function home() {
+      window.location.href = "index.html"; 
+    }
+
+    function web10() {
+      window.location.href = "Tugas Web 10/indexlogin.html"; 
+    }
+
+    function web11() {
+      window.location.href = "Tugas Web 11/indexlogin.html"; 
+    }
+
+    function web12() {
+      window.location.href = "Tugas Web 12/indexlogin.html";
+    }
+
+      function openKlub(namaklub) { 
+        var i; 
+        var x = document.getElementsByClassName("klub"); 
+        for (i = 0; i < x.length; i++) { 
+          x[i].style.display = "none";   
+        } 
+        document.getElementById(namaklub).style.display = "block";   
+      } 
+    </script>
+    <div id="button">
+    <center>
+      <br>
+      <br>
+      <input type="button" class="w3-button w3-animate-bottom color-gradient-satu " value="Visit Web 10" onclick="web10()">
+      <input type="button" class="w3-button w3-animate-bottom color-gradient-dua " value="Visit Web 11" onclick="web11()">
+      <input type="button" class="w3-button w3-animate-bottom color-gradient-tiga " value="Visit Web 12" onclick="web12()">
+      <input type="button" class="w3-button w3-animate-bottom color-gradient-empat" value="Refresh" onclick="refresh()">
+    </center>
+  </body> 
+</html>
